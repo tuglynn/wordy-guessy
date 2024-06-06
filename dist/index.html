@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Wordy Guessy</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body>
+  <header>
+    <h1>WORDY GUESSY</h1>
+    <p>Welcome to Wordy Guessy! Get 5 tries to guess the word! Play against the computer or play with friends! Each guess will tell you if the letter is in the hidden word and if it is in the correct position. Let the fun begin!</p>
+    <h2><span id="rules">Rules</span></h2>
+    <p id="instructions" class="hidden">A letter in a green box <span class="guessed-letter correct-placement">E</span> Means the letter is in the correct position of the word. A letter in a blue box <span class="guessed-letter in-word-wrong-place">F</span> means that it is in the word, but not in the correct position.</p>
+
+    <button id="start-btn">Start</button>
+    <button id="reset-btn">Reset</button>
+ </header>
+  <main>
+    <div id="secret-word"></div>
+ 
+    <div id="play-area">
+      <div id="word-list">
+      <ol id="words-guessed"></ol>
+    </div>
+       <div id="input-display"></div>
+      <input id="user-input" type="text" placeholder="guess the word!" disabled><button type="submit" id="confirm-btn" disabled>Check word</button>
+    </div>
+  </main>
+</body>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+body {
+  height: 100vh;
+  text-align: center;
+  background-color: #123456;
+  color: #ffeeff;
+  font-family: sans-serif;
+}
+#secret-word {
+  height: 50px;
+}
+.empty-space {
+  font-size: 3rem;
+}
+#word-list {
+  width: 50px;
+}
+li {
+  height: 30px;
+}
+.guessed-letter {
+  border: 1px #fff solid;
+    padding: .2em;
+  margin: .2rem;
+}
+.correct-placement {
+  background-color: #00AE16;
+}
+.in-word-wrong-place {
+  background-color: #009098;
+}
+#rules {
+  color: yellow;
+}
+#rules:hover {
+  cursor: pointer;
+  color: #00AE16;
+}
+.hidden {
+  display: none;
+}

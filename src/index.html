@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <h1>WORDY GUESSY</h1>
+    <p>Welcome to Wordy Guessy! Get 5 tries to guess the word! Play against the computer or play with friends! Each guess will tell you if the letter is in the hidden word and if it is in the correct position. Let the fun begin!</p>
+    <h2><span id="rules">Rules</span></h2>
+    <p id="instructions" class="hidden">A letter in a green box <span class="guessed-letter correct-placement">E</span> Means the letter is in the correct position of the word. A letter in a blue box <span class="guessed-letter in-word-wrong-place">F</span> means that it is in the word, but not in the correct position.</p>
+
+    <button id="start-btn">Start</button>
+    <button id="reset-btn" class="hidden">Reset</button>
+ </header>
+  <main>
+    <div id="secret-word"></div>
+ 
+    <div id="play-area">
+      <div id="word-list">
+      <ol id="words-guessed"></ol>
+    </div>
+       <div id="input-display"></div>
+      <input id="user-input" class="hidden" type="text" placeholder="guess the word!">
+      <button type="submit" id="confirm-btn" class="hidden">Check word</button>
+    </div>
+    <script src="./script.js"></script>
+  </main>
+</body>
+</html>
